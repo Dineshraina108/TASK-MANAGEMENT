@@ -1,0 +1,147 @@
+div.msgBox {
+    padding: 4px 10px 4px 10px;
+    position: fixed;
+    z-index: 1000000000000;
+    font-family: Verdana;
+    width: 430px;
+    min-height: 160px;
+    color: #00335e;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0px 0px 11px #000000;
+    -webkit-box-shadow: 0px 0px 11px #000000;
+    box-shadow: 0px 0px 11px #000000;
+    height: auto;
+    /*background: rgba(181,220,238,1);*/
+    background: rgba(17,132,199,1);
+    background: -moz-linear-gradient(top, rgba(17,132,199,1) 1%, rgba(39,144,204,1) 4%, rgba(181,220,238,1) 23%, rgba(207,229,240,1) 26%, rgba(242,242,242,1) 30%);
+    background: -webkit-gradient(left top, left bottom, color-stop(1%, rgba(17,132,199,1)), color-stop(4%, rgba(39,144,204,1)), color-stop(23%, rgba(181,220,238,1)), color-stop(26%, rgba(207,229,240,1)), color-stop(30%, rgba(242,242,242,1)));
+    background: -webkit-linear-gradient(top, rgba(17,132,199,1) 1%, rgba(39,144,204,1) 4%, rgba(181,220,238,1) 23%, rgba(207,229,240,1) 26%, rgba(242,242,242,1) 30%);
+    background: -o-linear-gradient(top, rgba(17,132,199,1) 1%, rgba(39,144,204,1) 4%, rgba(181,220,238,1) 23%, rgba(207,229,240,1) 26%, rgba(242,242,242,1) 30%);
+    background: -ms-linear-gradient(top, rgba(17,132,199,1) 1%, rgba(39,144,204,1) 4%, rgba(181,220,238,1) 23%, rgba(207,229,240,1) 26%, rgba(242,242,242,1) 30%);
+    /*background: linear-gradient(to bottom, rgba(17,132,199,1) 1%, rgba(39,144,204,1) 4%, rgba(181,220,238,1) 23%, rgba(207,229,240,1) 26%, rgba(242,242,242,1) 30%);*/
+    background: linear-gradient(to bottom, rgba(17,132,199,1) 1%, rgb(31 115 162) 4%, rgb(16 101 156) 20%, rgb(0 63 112) 19%, rgba(242,242,242,1) 15%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1184c7', endColorstr='#f2f2f2', GradientType=0 );
+}
+
+div.msgBoxBackGround {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow:auto;*/
+    height: auto;
+    background-color: #000000;
+    filter: alpha(opacity=40);
+    opacity: 0.9;
+    z-index: 999444444444;
+}
+
+div.msgBoxTitle {
+    padding: 0px 0 0px 0;
+    font-variant: small-caps;
+    font-size: 16pt;
+    font-weight: lighter;
+    font-family: Verdana;
+    /*color: #006f00; #00335e*/
+    color: #ffffff;
+    width: 100%;
+    /*border-bottom: 1px solid #002c5f;*/
+}
+
+div.msgBoxImage {
+    margin: 20px 5px 0 5px;
+    display: inline-block;
+    float: left;
+    height: 75px;
+    width: 75px;
+}
+
+    div.msgBoxImage img {
+        height: 75px;
+        width: 75px;
+    }
+
+div.msgBoxContent {
+    font-size: 11pt;
+    margin: 7px 3px 3px 3px;
+    display: inline-block;
+    float: left;
+    height: 105px;
+    width: 319px;
+}
+
+    div.msgBoxContent p {
+        padding: 0;
+        margin: 0;
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+    div.msgBoxContent span {
+        display: table-cell;
+        vertical-align: middle;
+        color: #fffff;
+        font-weight: bold;
+        /*color: #006f00;*/
+}
+
+div.msgBoxButtons {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+    div.msgBoxButtons input[type='button'] {
+        cursor: pointer;
+        margin: 2px;
+        height: 35px;
+        width: 90px;
+        border: 1px solid #AFAFAF;
+        background: -moz-linear-gradient(top, #00335e 0%, #2197db 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00335e), color-stop(100%, #2197db)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #00335e 0%, #2197db 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #00335e 0%, #2197db 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #00335e 0%, #2197db 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #00335e 0%, #2197db 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00335e', endColorstr='#2197db', GradientType=0 ); /* IE6-9 */
+        color: #FFFFFF;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+
+        div.msgBoxButtons input[type='button']:hover {
+            background-color: #00549c;
+            color: White;
+        }
+
+        div.msgBoxButtons input[type='button']:active {
+            background-color: #AAAAAA;
+            color: White;
+        }
+
+div.msgBoxInputs {
+    margin: 0 auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    width: 195px;
+}
+
+div.msgInput input[type='text'], div.msgInput input[type='password'] {
+    padding: 4px;
+    border: 1px solid #DFDFDF;
+    color: #2f2f2f;
+    width: 180px;
+}
+
+div.msgInput text {
+    color: #2f2f2f;
+    font-size: 10pt;
+}
